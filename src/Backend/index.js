@@ -8,7 +8,7 @@ const jwt = require("jsonwebtoken")
 const app = express();
 const port = 5000;
 const mongo_url =
-  "mongodb+srv://utuyashprajapati:EvuYitdZJej8VFN6@cluster0.yfiztjd.mongodb.net/Quoty";
+  "mongodb+srv://<username>:<password>@cluster0.yfiztjd.mongodb.net/Quoty";
 app.use(cors());
 app.use(express.json());
 mongoose.connect(mongo_url);
