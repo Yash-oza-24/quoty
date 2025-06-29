@@ -1,5 +1,6 @@
 .body{
 padding-left: 275px;
+/* font-family: cursive; */
 }
 .inputtext{
     display: flex;
@@ -7,16 +8,24 @@ padding-left: 275px;
     justify-content: center;
     margin-top: 20px;
 }
+/* .home{
+    background-color: rgb(191, 200, 200)
+}    */
 .input{
     width: 550px;
     height: 40px;
     padding: 2px;
     margin: 5px;
+    border-radius: 5px;
+}
+.navbar-brand{
+    font-family: cursive;
 }
 .nav-login{
     display: flex;
     align-items: center;
     gap: 45px;
+    font-family: cursive;
 }
 .btn{
     height:  42px;
@@ -28,10 +37,20 @@ padding-left: 275px;
     height: 80px;
     background-color: rgb(70, 68, 68);
     border-radius: 5px;
+    position: relative;
 }
+.copy-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 4px;
+    size:0px;
+  }
 h1{
-    padding-left: 450px;
+    padding-left: 475px;
+    /* font-family: cursive; */  
 }
 h5{
-    padding-left: 500px;
+    padding-left: 525px;
+    /* font-family: cursive; */  
 }

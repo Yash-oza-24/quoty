@@ -13,9 +13,9 @@ const ForgotPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your password reset logic here
+  
     console.log('Password reset request for email:', email);
-    // You can send a reset link or confirmation to the user's email
+  
   };
 
   return (

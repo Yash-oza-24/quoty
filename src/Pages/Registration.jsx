@@ -32,7 +32,7 @@ const Registration = () => {
     if (formData.password.length < 6) {
       alert('Password must be at least 6 characters long');
       return;
-    }
+    } 
     console.log("SignUp Function Executed", formData);
     let responseData;
     await fetch('http://localhost:5000/registration', {
@@ -48,7 +48,7 @@ const Registration = () => {
     if (responseData.success) {
       localStorage.setItem('auth-token', responseData.token);
       localStorage.setItem('username', formData.username);
-      window.location.replace('/login');
+      window.location.replace('/');
     } else {
       alert(responseData.errors);
   }

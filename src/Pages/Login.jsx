@@ -33,22 +33,23 @@ const Login = () => {
       return;
     }
     console.log("Login Function Executed", formData);
-    let responseData;
-    
+    let responseData ;  
     await fetch("http://localhost:5000/login", {
       method: "POST",
       headers: {
         Accept: "application/form-data",
         "content-type": "application/json",
-      },
+      },      
       body: JSON.stringify(formData),
+ 
     })
+  
       .then((response) => response.json())
-      .then((data) => (responseData = data));
+      .then((data) => (responseData = data)); 
     if (responseData.success) {
       localStorage.setItem("auth-token", responseData.token);
-      localStorage.setItem("username", formData.username);
-      window.location.replace("/home");
+      localStorage.setItem("username", responseData.username);
+      window.location.replace("/");
     } else {
       alert(responseData.errors);
     }
